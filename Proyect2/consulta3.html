@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta 3</title>
+</head>
+<body>
+<h2>Consulta 3: Técnicos de la empresa AMAZON</h2>
+
+<p>Usando programación funcional con <code>filter()</code>:</p>
+
+<ul>
+    <li th:each="t : ${filtrados}" th:text="${t}"></li>
+</ul>
+
+<a th:href="@{/}">Volver al inicio</a>
+</body>
+</html>

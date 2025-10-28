@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>     lta 2</title>
+</head>
+<body>
+<h2>Consulta 2: Listas</h2>
+
+<h3>Usando ListIterator (Stack de técnicos)</h3>
+<ul>
+    <li th:each="t : ${stack}" th:text="${t}"></li>
+</ul>
+
+<h3>Usando Iterator (Deque de supervisor)</h3>
+<ul>
+    <li th:each="t : ${deque}" th:text="${t}"></li>
+</ul>
+
+<a th:href="@{/}">Volver al inicio</a>
+</body>
+</html>

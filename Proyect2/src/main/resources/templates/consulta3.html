@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Consulta 3</title></head>
+<body>
+<h2>Consulta 3: Técnicos en AMAZON</h2>
+<ul>
+    <li th:each="n : ${resultado}" th:text="${n}"></li>
+</ul>
+<a th:href="@{/}">Volver al inicio</a>
+</body>
+</html>

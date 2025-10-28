@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Consulta 1</title>
+</head>
+<body>
+<h2>Consulta 1: Técnicos y Supervisor</h2>
+
+<h3>Técnicos:</h3>
+<ul>
+  <li th:each="t : ${tecnicos}" th:text="${t}"></li>
+</ul>
+
+<h3>Supervisor:</h3>
+<p th:text="'Nombre: ' + ${supervisor.nombre} + ', Categoría: ' + ${supervisor.categoria} + ', Empresa: ' + ${supervisor.empresa}"></p>
+
+<a th:href="@{/}">Volver al inicio</a>
+</body>
+</html>
